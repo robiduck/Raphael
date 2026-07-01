@@ -40,6 +40,9 @@ class Raphael {
     static const uint8_t SENS4 = 7;
     static const uint8_t SENS5 = A4;
     static const uint8_t SENS6 = A3;
+    static const uint8_t NPN1 = D2;
+    static const uint8_t NPN2 = D3;
+
 
   private:
     // Raphael v1 Donanım Haritası (Kullanıcıdan Gizlenen Kısım)

@@ -59,17 +59,21 @@ void loop() {
     bool s4 = robot.dijitalSensorOku(Raphael::SENS4); // Pin 7
     bool s5 = robot.dijitalSensorOku(Raphael::SENS5); // Pin A4 (Dijital olarak okunuyor)
     bool s6 = robot.dijitalSensorOku(Raphael::SENS6); // Pin A3 (Dijital olarak okunuyor)
+    bool npn1 = robot.dijitalSensorOku(Raphael::NPN1);//12V NPN Sensor //D2
+    bool npn2 = robot.dijitalSensorOku(Raphael::NPN2);//12V NPN Sensor //D3
 
     // Verilerin Seri Port ekranına standart formatta yazdırılması
     Serial.print("LIPO: "); Serial.print(voltaj); Serial.print("V");
     Serial.print(" | TAKTİK: "); Serial.print(taktik);
-    Serial.print(" | SENSÖRLER (D12-D11-D8-D7-A4-A3): ");
+    Serial.print(" | SENSÖRLER (D12-D11-D8-D7-A4-A3-D2-D3): ");
     Serial.print(s1); Serial.print("-");
     Serial.print(s2); Serial.print("-");
     Serial.print(s3); Serial.print("-");
     Serial.print(s4); Serial.print("-");
     Serial.print(s5); Serial.print("-");
-    Serial.println(s6);
+    Serial.print(s6); Serial.print("-");
+    Serial.print(npn1); Serial.print("-");
+    Serial.println(npn2);
   }
 }
 
